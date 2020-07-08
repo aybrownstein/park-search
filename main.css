@@ -1,3 +1,20 @@
 * {
     box-sizing: border-box;
 }
+
+button,
+input[type="text"] {
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
