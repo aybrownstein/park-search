@@ -23,10 +23,10 @@ function displayResults(responseJson) {
 
 function getParks(query, maxResults = 50) {
     const params = {
-        key: apiKey,
         q: query,
         part: 'data',
         maxResults,
+        key: apiKey,
     };
     const queryString = formatQueryParams(params)
     const url = searchUrl + '?' + queryString;
