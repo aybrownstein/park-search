@@ -25,7 +25,7 @@ function getParks(query, maxResults = 50) {
     const params = {
         key: apiKey,
         q: query,
-        part: data,
+        part: 'data',
         maxResults,
     };
     const queryString = formatQueryParams(params)
