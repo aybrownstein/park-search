@@ -12,7 +12,7 @@ function displayResults(responseJson) {
     console.log(responseJson);
     $('#results-list').empty();
     for (let i = 0; i < responseJson.data.length; i++) {
-        $('#resultslist').append(
+        $('#results-list').append(
             `<li><h3>${responseJson.data[i].fullName}</h3>
          <p>${responseJson.data[i].description}</p>
          <a src='${responseJson.data[i].url}'></li> `
