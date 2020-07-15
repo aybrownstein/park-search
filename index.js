@@ -34,7 +34,7 @@ function getParks(query, maxResults = 50) {
 
     fetch(url)
         .then(response => {
-            if (resposnse.ok) {
+            if (response.ok) {
                 return response.json();
             }
             throw new Error(response.statusText);
